@@ -205,7 +205,7 @@ def kmedias(arquivo, k, max_itera):
 
       for i in  k:
           for j in range(len(clusters[i])):
-              nome_objeto = clusters[j]
+              nome_objeto = clusters[i][j]
               cluster = i
               f.write(f"{nome_objeto}\t{cluster}\n")
 
